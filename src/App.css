@@ -1,3 +1,11 @@
+.student{
+  background-color: #c46060;
+  padding: 10px;
+  margin: 10px;
+  font-size: 28px;
+  color: #fff;
+
+}
 .counter {
   font-size: 16px;
   padding: 5px 10px;
