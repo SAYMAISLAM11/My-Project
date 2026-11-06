@@ -1,23 +1,29 @@
 
 import './App.css'
+import ToDo from './Todo';
 function App() {
+  const time=50;
   return (
     <>
       <h1>React Core Concepts</h1>
-      <Student />
+      <ToDo learn="React Components" isDone={true} time={time}></ToDo>
+      <ToDo learn="React Revices" isDone={false}></ToDo>
+      <ToDo learn="React element done" isDone={false} time="30"></ToDo>
+      {/* <Student />
       <Student />
       <Student />
       <Developer name="sayma" language="Python"></Developer>
       <Developer name="sadia" language="JavaScript"></Developer>
       <Devices name="sayma" device="Laptop"></Devices>
       <Devices></Devices>
-      <Player name="sharmin" age="30"></Player>
+      <Player name="sharmin" age="30"></Player> 
       <Player name="Nipon" age="25"></Player>
-
+      <Player age="40"></Player> */}
     </>
   )
 }
-function Player({name, age}) {
+
+function Player({name="Null", age}) {
   return (
     <div className="student">
       <h2>Name:{name}</h2>
